@@ -1,0 +1,459 @@
+@font-face {font-family: "Alleyn W01 Regular";
+    src: url("fonts/Alleyn-regular/faa9c8362473bf8b1d2886cfb5962735.eot"); /* IE9*/
+    src: url("fonts/Alleyn-regular/faa9c8362473bf8b1d2886cfb5962735.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/Alleyn-regular/faa9c8362473bf8b1d2886cfb5962735.woff2") format("woff2"), /* chrome、firefox */
+    url("fonts/Alleyn-regular/faa9c8362473bf8b1d2886cfb5962735.woff") format("woff"), /* chrome、firefox */
+    url("fonts/Alleyn-regular/faa9c8362473bf8b1d2886cfb5962735.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/Alleyn-regular/faa9c8362473bf8b1d2886cfb5962735.svg#Alleyn W01 Regular") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Alleyn W01 Semibold";
+    src: url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.eot"); /* IE9*/
+    src: url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.woff2") format("woff2"), /* chrome、firefox */
+    url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.woff") format("woff"), /* chrome、firefox */
+    url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.svg#Alleyn W01 Semibold") format("svg"); /* iOS 4.1- */
+}
+
+.navbar {
+    border-radius: 0;
+    padding-top: 1.6em;
+    margin-left:2em;
+}
+
+.bg-brand {
+    /*background-color: #05db5c; */
+    background-color: transparent; 
+}
+
+/*.nav-logo {
+    height: 30px;
+    padding-right: 8px;
+}*/
+
+.logo-color {
+    color: #FFF;
+}
+
+.logo-circ {
+    border: 3px #FFF solid;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.logo-circ:hover {
+    border: 3px #05DB5C solid;
+    background-color: #05DB5C;
+    -moz-transition: color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.navbar-brand {
+    font-family: Alleyn W01 Semibold;
+    font-size: 1.6em;
+    margin-right: 2rem;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-toggler {
+    color: #05DB5C;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #05DB5C;
+}
+
+.nav {
+    padding: 0.33em;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #05DB5C;
+    color: #FFF;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .active>.nav-link:focus, .navbar-dark .navbar-nav .active>.nav-link:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.active:focus, .navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .nav-link.open, .navbar-dark .navbar-nav .nav-link.open:focus, .navbar-dark .navbar-nav .nav-link.open:hover, .navbar-dark .navbar-nav .open>.nav-link, .navbar-dark .navbar-nav .open>.nav-link:focus, .navbar-dark .navbar-nav .open>.nav-link:hover {
+    border-bottom: 3px solid #05DB5C;
+    color: #FFF;
+}
+
+.btn-outline-white {
+    color: #fff;
+    background-image: none;
+    background-color: transparent;
+    border-color:#fff;
+}
+
+.btn-outline-white:hover {
+    color: #fff;
+    background-color: #05DB5C;
+    border-color: #05DB5C;
+}
+
+.navbar-btn-right {
+    margin-right: 2rem;
+    margin-left: 1.2rem;
+}
+
+.navbar-btn-middle {
+    /*margin-right: 1.2rem;*/
+    margin-left: 1.2rem;
+}
+
+/*cover image*/
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 70%; /* For at least Firefox */
+  min-height: 70%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  padding-top: 44px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.cover-heading {
+    color: #fff;
+    font-family: Alleyn W01 Semibold;
+    margin-bottom: 2em;
+ }
+
+.lead {
+     color: rgba(255,255,255,0.8);
+ }
+
+ .head-banner {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: .875rem;
+    background-color: #fc5268;
+    line-height: 1;
+    padding: 13px 18px;
+    position: relative;
+    /*margin: 16px 0px;*/
+    overflow: hidden;
+ }
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+ .bg-img {
+  background: url(app/img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    -webkit-filter: url(#duotone);
+  filter:  url(#duotone); /* For Firefox pre-35 */
+  filter:  url(#duotone);
+ }
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+.search-main {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+}
+
+/*Flags*/
+
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('app/img/flags.png') no-repeat;
+}
+
+
+.flag.flag-ph {
+    background-position: -32px 2px;
+}
+
+.flag.flag-hk {
+    background-position: 0 2px;
+}
+
+.flag.flag-th {
+    background-position: -16px -14px;
+}
+
+.flag.flag-my {
+    background-position: -16px 2px;
+}
+
+.flag.flag-vn {
+    background-position: -32px -14px;
+}
+
+.flag.flag-sg {
+    background-position: 0 -14px;
+}
+
+.dropdown-menu {
+    margin: 1rem 0 0;
+    min-width: 10rem;
+    left: -46px;
+}
+
+.nav-tabs.product-options {
+    border: 1px solid transparent;
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+}
+
+.product-options {
+  padding:0;
+}
+
+.product-options .nav-link {
+  min-width: 244px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFF;
+}
+
+.product-options .nav-link:hover {
+  background-color:rgba(0, 0, 0, 0.6);
+  color: #05DB5C;
+  font-weight:700;
+  border-color: transparent; 
+}
+
+.product-options .nav-link.active {
+  background-color:rgba(0, 0, 0, 0.6);
+  color: #05DB5C;
+  font-weight:700;
+  border-color: transparent; 
+}
+
+.product-options .nav-link.active:hover {
+  background-color:rgba(0, 0, 0, 0.6);
+  color: #05DB5C;
+  font-weight:700;
+  border-color: transparent; 
+}
+
+.bg-img .jumbotron {
+  background-color: transparent;
+}
+
+.product-filter {
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 64px;
+  margin: 0px 1px;
+}
+
+.product-filter label {
+  color: #fff;
+}
+
+.product-filter .form-control {
+    color: #05DB5C;
+    background-color: transparent;
+    border: transparent;
+    vertical-align: baseline;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #05DB5C;
+    border-color:#05DB5C; 
+    border-bottom-color: rgba(0,173,70,.75);
+    -webkit-box-shadow: 0 2px 0 0 #24b55e;
+    -moz-box-shadow: 0 2px 0 0 #24b55e;
+    -ms-box-shadow: 0 2px 0 0 #24b55e;
+    -o-box-shadow: 0 2px 0 0 #24b55e;
+    box-shadow: 0 2px 0 0 #24b55e;
+}
+
+.filter-block {
+  z-index: -1;
+}
+
+.filter-block .nav-tabs .nav-item {
+    margin-left: 0px;
+    padding-right: 4px;
+    padding-left: 0px;
+}
+
+.bubble {
+position: relative;
+width: 620px;
+height: 80px;
+padding: 24px;
+background: rgba(255, 255, 255, 0.2);
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
+.bubble:after {
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0px 14px 21px 0;
+border-color: transparent rgba(255, 255, 255, 0.2);
+display: block;
+width: 0;
+z-index: 1;
+left: -14px;
+top: 40px;
+}
+
+.hero {
+  margin-bottom: -0.8em;
+  z-index: 1;
+}
+
+.row-benefits {
+  padding: 0 24px;
+}
+
+.row-benefits img {
+  padding: 12px;
+}
+
+.row-benefits h6 {
+  color: #717e87;
+}
+
+.row-benefits p {
+  line-height: 1.2;
+}

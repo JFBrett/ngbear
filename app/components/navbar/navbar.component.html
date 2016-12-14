@@ -1,0 +1,42 @@
+<nav class="navbar navbar-dark bg-brand">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-toggleable-xs" id="navbar-header">
+            <a class="navbar-brand" routerLink="/" routerLinkActive="active">
+            <img src="../app/img/nav-logo.png" class="d-inline-block align-top nav-logo logo-circ animated rollIn">
+            go<span class="logo-color">bear</span>
+            </a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/" routerLinkActive="active">Insurance <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about" routerLinkActive="active">Credit cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Loans</a>
+                </li>
+            </ul>
+            <form class="form-inline float-md-right">
+                <a class="btn btn-block btn-social btn-facebook d-inline">
+                    <span class="fa fa-facebook"></span>
+                    Log in with Facebook
+                </a>
+                <button class="btn btn-outline-white navbar-btn-middle d-inline" type="submit">Sign up</button>
+                <div class="dropdown d-inline">
+                    <button class="btn dropdown-toggle btn-outline-white navbar-btn-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SG
+                        <span class="flag flag-sg"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Hong Kong <span class="flag flag-hk pull-right"></span></a>
+                        <a class="dropdown-item" href="#">Malaysia <span class="flag flag-my pull-right"></span></a>
+                        <a class="dropdown-item" href="#">Philippines <span class="flag flag-ph pull-right"></span></a>
+                        <a class="dropdown-item" href="#">Thailand <span class="flag flag-th pull-right"></span></a>
+                        <a class="dropdown-item" href="#">Vietnam <span class="flag flag-vn pull-right"></span></a>
+                    </div>
+                </div>
+            </form>
+    </div>
+</nav> <!-- /navbar -->
+
+<script>$('.dropdown-toggle').dropdown()</script>

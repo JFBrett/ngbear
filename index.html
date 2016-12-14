@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-social.css">
+    <link rel="stylesheet" href="styles.css">
+    <!--Animate-->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <!--Alleyn fonts-->
+    <link href="//db.onlinewebfonts.com/c/3ad0aac697589e9dc6f60d8d55f27e0c?family=Alleyn+W01+Semibold" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/faa9c8362473bf8b1d2886cfb5962735?family=Alleyn+W01+Regular" rel="stylesheet" type="text/css"/>
+    <!--Bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Font awesome-->
+    <script src="https://use.fontawesome.com/b39c9c2d78.js"></script>
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <base href="/">
+    <my-app>Loading ...</my-app>
+  </body>
+</html>

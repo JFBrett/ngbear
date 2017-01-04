@@ -16,6 +16,24 @@
     url("fonts/Alleyn-semi/3ad0aac697589e9dc6f60d8d55f27e0c.svg#Alleyn W01 Semibold") format("svg"); /* iOS 4.1- */
 }
 
+@font-face {font-family: "Alleyn-Regular";
+    src: url("fonts/Alleyn-Regular.otf"); /* IE9*/
+    src: url("fonts/Alleyn-Regular.otf") format("opentype"), /* IE6-IE8 */
+    url("fonts/Alleyn-Regular.otf") format("opentype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {font-family: "Alleyn-Medium";
+    src: url("fonts/Alleyn-Medium.otf"); /* IE9*/
+    src: url("fonts/Alleyn-Medium.otf") format("opentype"), /* IE6-IE8 */
+    url("fonts/Alleyn-Medium.otf") format("opentype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {font-family: "Alleyn-Bold";
+    src: url("fonts/Alleyn-Bold.otf"); /* IE9*/
+    src: url("fonts/Alleyn-Bold.otf") format("opentype"), /* IE6-IE8 */
+    url("fonts/Alleyn-Bold.otf") format("opentype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
 .navbar {
     border-radius: 0;
     padding-top: 1.6em;
@@ -56,7 +74,7 @@
 }
 
 .navbar-brand {
-    font-family: Alleyn W01 Semibold;
+    font-family: Alleyn-Bold;
     font-size: 1.6em;
     margin-right: 2rem;
 }
@@ -154,7 +172,7 @@ body {
 
 .cover-heading {
     color: #fff;
-    font-family: Alleyn W01 Semibold;
+    font-family: Alleyn-Medium;
     margin-bottom: 2em;
  }
 
